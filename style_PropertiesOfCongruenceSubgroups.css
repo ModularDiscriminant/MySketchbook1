@@ -1,0 +1,30 @@
+/*2026/8/7
+(이 파일 만든 시각: 2026/8/7 16:43:29)*/
+
+/*GitHub ModularDiscriminant 계정 test1 리포지토리의 'style_Untitled9_table.css' 파일을 참고해서 만듦 (2026/8/7 16:58:38)*/
+
+
+
+table
+{
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+
+td, th
+{
+    border: solid 1px black;
+    padding: 10px 20px;
+}
+
+/*
+tr
+{
+    border: solid 1px black;
+}
+*/
+
+td
+{
+    text-align: center;
+}
