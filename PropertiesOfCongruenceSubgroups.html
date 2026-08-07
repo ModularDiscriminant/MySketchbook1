@@ -77,6 +77,8 @@
                 0 & 1
             \end{pmatrix} \pmod{N} \right\}.$$
             <!--(2026/8/8 6:31:18)-->
+            <span class="annotation">Here, $*$ denotes an arbitrary integer.</span>
+            <!--(2026/8/8 7:36:05)-->
         </li>
 
         <li>
@@ -98,8 +100,13 @@
         <li>
             For all $N \in \mathbb{N}$,
             $$\mathrm{SL}_2(\mathbb{Z}) \geq \Gamma_0(N) \geq \Gamma_1(N) \geq \Gamma(N).$$
+            <!--(2026/8/8 6:38:48)-->
+            Moreover, we have
+            $$[\mathrm{SL}_2(\mathbb{Z}) : \Gamma_0(N)] = N \prod_{p | N} \left( 1 + \frac{1}{p} \right),$$
+            $$[\Gamma_0(N) : \Gamma_1(N)] = N \prod_{p | N} \left( 1 - \frac{1}{p} \right) = \phi(N),$$
+            $$[\Gamma_1(N) : \Gamma(N)] = N.$$
+            <!--(2026/8/8 7:38:31)-->
         </li>
-        <!--(2026/8/8 6:38:48)-->
     </ul>
 
     <br><br><br>
@@ -140,9 +147,10 @@
                 <span class="annotation">$[\mathrm{SL}_2(\mathbb{Z}) : \Gamma]$</span>
                 <!--(2026/8/8 7:17:17)-->
             </th>
-            <td>test</td>
-            <td>test</td>
-            <td>test</td>
+            <td>$$N   \prod_{p | N} \left( 1 + \frac{1}{p  } \right)$$</td>
+            <td>$$N^2 \prod_{p | N} \left( 1 - \frac{1}{p^2} \right)$$</td>
+            <td>$$N^3 \prod_{p | N} \left( 1 - \frac{1}{p^2} \right)$$</td>
+            <!--(2026/8/8 7:30:19)-->
         </tr>
         <tr>
             <th>
