@@ -14,15 +14,19 @@
     <link href="/style.css" rel="stylesheet" type="text/css">
 
 
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({            
-            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
-        });
+    <script>
+    MathJax = {
+    tex: {
+        inlineMath: {'[+]': [['$', '$']]}
+    }
+    };
     </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
     <!--
-    https://m.blog.naver.com/mathesis_time/222108156490
-    이 글에서 가져옴~! ㅎㅎ (2025/8/17 19:38:20) 오오..! ㅎㅎ 흠 ㅎㅎ
+    MathJax의 현재 최신 버전? 최신 안정 버전? ... 인 MathJax 4를 불러와서 사용하는 코드. (2026/5/4 18:54:44)
+    MathJax 공식 documentation인
+    https://docs.mathjax.org/en/stable/web/start.html
+    이 글에서 가져옴 (2026/5/4 18:54:51)
     -->
 </head>
 <body>
