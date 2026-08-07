@@ -1,4 +1,4 @@
-<!--2026/8/7-->
+<!--2026/8/7, 2026/8/8-->
 
 <!--(이 문서 만든 시각: 2026/8/7 16:16:42)-->
 
@@ -35,8 +35,75 @@
     <h3>Properties of congruence subgroups $\Gamma_0(N)$, $\Gamma_1(N)$, and $\Gamma(N)$</h3>
     <!--(2026/8/7 16:18:46)-->
 
+    <br><br>
+
+    We denote the set of positive integers by $\mathbb{N}$.
+
+    <br><br>
+
+    <h2>Definition</h2>
+    
+    For any positive integer $N \in \mathbb{N}$,
+    $$\Gamma_0(N) := \left\{ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z}) \ \middle| \ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \equiv \begin{pmatrix}
+        * & * \\
+        0 & *
+    \end{pmatrix} \pmod{N} \right\},$$
+    $$\Gamma_1(N) := \left\{ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z}) \ \middle| \ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \equiv \begin{pmatrix}
+        1 & * \\
+        0 & 1
+    \end{pmatrix} \pmod{N} \right\},$$
+    $$\Gamma(N) := \left\{ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z}) \ \middle| \ \begin{pmatrix}
+        a & b \\
+        c & d
+    \end{pmatrix} \equiv \begin{pmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{pmatrix} \pmod{N} \right\}.$$
+    <!--(2026/8/8 6:31:18)-->
+
+    In particular, $\Gamma(N)$ is called the <b>principal congruence subgroup of level $N$</b> for each $N \in \mathbb{N}$.
+    <!--(2026/8/8 6:49:04)-->
+
+    <br><br>
+
+    <h2>Basic properties</h2>
+    <!--(2026/8/8 6:46:27)-->
+
+    <ul>
+        <li>
+            $$\mathrm{SL}_2(\mathbb{Z}) = \Gamma_0(1) = \Gamma_1(1) = \Gamma(1)$$
+        </li>
+
+        <li>
+            For all $N \in \mathbb{N}$,
+            $$\mathrm{SL}_2(\mathbb{Z}) \geq \Gamma_0(N) \geq \Gamma_1(N) \geq \Gamma(N).$$
+        </li>
+        <!--(2026/8/8 6:38:48)-->
+    </ul>
+
+    <br><br><br>
 
 
+
+    <h2>Table of properties of congruence subgroups $\Gamma_0(N)$, $\Gamma_1(N)$, and $\Gamma(N)$</h2>
+
+    Here, $N \in \mathbb{N}$ is a positive integer. <br><br>
+    <!--(2026/8/8 6:44:44)-->
 
     <table>
         <tr>
@@ -44,6 +111,22 @@
             <th>$\Gamma_0(N)$</th>
             <th>$\Gamma_1(N)$</th>
             <th>$\Gamma(N)$</th>
+        </tr>
+        <tr>
+            <th>elements modulo $N$</th>
+            <td>$\begin{pmatrix}
+                * & * \\
+                0 & *
+            \end{pmatrix}$</td>
+            <td>$\begin{pmatrix}
+                1 & * \\
+                0 & 1
+            \end{pmatrix}$</td>
+            <td>$\begin{pmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{pmatrix}$</td>
+            <!--(2026/8/8 6:40:40)-->
         </tr>
         <tr>
             <th>index in $SL(2, \mathbb{Z})$</th>
