@@ -269,9 +269,9 @@
         <tr>
             <th>$\epsilon_2(\Gamma)$</th>
             <td>$\begin{cases}
-                \prod_{p | N} \left( 1 + \left( \frac{-1}{p} \right) \right) & (4 \nmid N) \\
+                \prod_{p | N} (1 + \chi_{4, 3}(p)) & (4 \nmid N) \\
                 0 & (4 \ | \ N)
-            \end{cases}$</td> <!--(2026/8/8 16:55:08)-->
+            \end{cases}$</td> <!--(2026/8/8 17:21:13)-->
             <td>?</td>
             <td>?</td>
         </tr>
@@ -279,9 +279,9 @@
         <tr>
             <th>$\epsilon_3(\Gamma)$</th>
             <td>$\begin{cases}
-                \prod_{p | N} \left( 1 + \left( \frac{-3}{p} \right) \right) & (9 \nmid N) \\
+                \prod_{p | N} (1 + \chi_{3, 2}(p)) & (9 \nmid N) \\
                 0 & (9 \ | \ N)
-            \end{cases}$</td> <!--(2026/8/8 16:55:15)-->
+            \end{cases}$</td> <!--(2026/8/8 17:21:54)-->
             <td>?</td>
             <td>?</td>
         </tr>
@@ -310,12 +310,32 @@
         <li>on $\epsilon_2(\Gamma_0(N))$:
             <ul>
                 <li>reference: Corollary 3.7.2 of [Diamond-Shurman]</li>
+
+                <li>
+                    $$\chi_{4, 3}(n) = \left( \frac{-4}{n} \right) = \begin{cases}
+                         1 & (n \equiv 1 \pmod{4}) \\
+                        -1 & (n \equiv 3 \pmod{4}) \\
+                         0 & (\gcd(4, n) > 1)
+                    \end{cases} \quad (n \in \mathbb{Z})$$
+                    is the unique primitive Dirichlet character of modulus 4. Here, $\left( \frac{-4}{n} \right)$ is the Kronecker symbol.
+                    <!--(2026/8/8 17:33:42)-->
+                </li>
             </ul>
         </li>
 
         <li>on $\epsilon_3(\Gamma_0(N))$:
             <ul>
                 <li>reference: Corollary 3.7.2 of [Diamond-Shurman]</li>
+
+                <li>
+                    $$\chi_{3, 2}(n) = \left( \frac{-3}{n} \right) = \begin{cases}
+                         1 & (n \equiv 1 \pmod{3}) \\
+                        -1 & (n \equiv 2 \pmod{3}) \\
+                         0 & (\gcd(3, n) > 1)
+                    \end{cases} \quad (n \in \mathbb{Z})$$
+                    is the unique primitive Dirichlet character of modulus 3. Here, $\left( \frac{-3}{n} \right)$ is the Kronecker symbol.
+                    <!--(2026/8/8 17:34:22)-->
+                </li>
             </ul>
         </li>
     </ul>
