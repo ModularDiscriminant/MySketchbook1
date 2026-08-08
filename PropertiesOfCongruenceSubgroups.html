@@ -49,6 +49,13 @@
             \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z})$ is the identity matrix.
         </li>
         <!--(2026/8/8 15:18:04)-->
+        <li>For $N \in \mathbb{N}$, $\prod_{p | N}$ means multiplying over all (distinct) prime factors $p \in \mathbb{N}$ of $N$.</li>
+        <li>For $N \in \mathbb{N}$, $\sum_{d | N}$ means adding over all (distinct) positive divisors $d \in \mathbb{N}$ of $N$.</li>
+        <!--(2026/8/8 20:46:40)-->
+        <li>
+            $\phi: \mathbb{N} \to \mathbb{N}$ is the Euler's totient function. For all $N \in \mathbb{N}$, we have
+            $$\phi(N) = N \prod_{p | N} \left( 1 - \frac{1}{p} \right).$$
+        </li> <!--(2026/8/8 20:49:10)-->
     </ul>
 
     <br>
@@ -123,11 +130,6 @@
                     & = N.
             \end{align}
             <!--(2026/8/8 7:42:02)-->
-            <span class="annotation">
-                Here, $p$ is a prime factor of $N$. <br>
-                $\phi$ denotes the Euler's totient function.
-            </span>
-            <!--(2026/8/8 7:57:40)-->
         </li>
     </ul>
 
@@ -308,9 +310,19 @@
 
         <tr>
             <th>$\epsilon_\infty(\Gamma)$</th>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
+            <td>$$\sum_{d | N} \phi \! \left( \gcd \! \left( d, \frac{N}{d} \right) \right)$$</td>
+            <td>$\begin{cases}
+                1 & (N = 1) \\
+                2 & (N = 2) \\
+                3 & (N = 4) \\
+                \frac{1}{2} \sum_{d | N} \phi(d) \phi \! \left( \frac{N}{d} \right) & (N = 3 \lor 5 \leq N)
+            \end{cases}$</td>
+            <td>$\begin{cases}
+                1 & (N = 1) \\
+                3 & (N = 2) \\
+                \frac{1}{2} N^2 \prod_{p | N} \left( 1 - \frac{1}{p^2} \right) & (3 \leq N)
+            \end{cases}$</td>
+            <!--(2026/8/8 21:19:12)-->
         </tr>
 
         <tr>
@@ -371,6 +383,27 @@
         <li>on $\epsilon_2(\Gamma_1(N))$, $\epsilon_2(\Gamma(N))$, $\epsilon_3(\Gamma_1(N))$, and $\epsilon_3(\Gamma(N))$:
             <ul>
                 <li>reference: page 107 of [Diamond-Shurman]</li> <!--(2026/8/8 20:03:57)-->
+            </ul>
+        </li>
+        <br>
+
+        <li>on $\epsilon_\infty(\Gamma_0(N))$:
+            <ul>
+                <li>reference: page 103 of [Diamond-Shurman]</li> <!--(2026/8/8 21:20:47)-->
+            </ul>
+        </li>
+        <br>
+
+        <li>on $\epsilon_\infty(\Gamma_1(N))$:
+            <ul>
+                <li>reference: page 102 of [Diamond-Shurman]</li> <!--(2026/8/8 21:20:35)-->
+            </ul>
+        </li>
+        <br>
+
+        <li>on $\epsilon_\infty(\Gamma(N))$:
+            <ul>
+                <li>reference: page 101 of [Diamond-Shurman]</li> <!--(2026/8/8 20:42:08)-->
             </ul>
         </li>
     </ul>
