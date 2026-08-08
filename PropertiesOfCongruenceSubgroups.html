@@ -221,15 +221,17 @@
         <li>$N \in \mathbb{N}$ is a positive integer.</li>
 
         <li>$\Gamma \leq \mathrm{SL}_2(\mathbb{Z})$ is a congruence subgroup.</li>
+        
+        <br>
 
         <li>
-        $d(\Gamma) \in \mathbb{N}$ is the degree $\deg(f)$ of the natural projection map
-        $$f: X(\Gamma) \to X(\mathrm{SL}_2(\mathbb{Z})), \quad f: \Gamma z \mapsto \mathrm{SL}_2(\mathbb{Z}) z$$
-        of modular curves (as a holomorphic map between compact Riemann surfaces) . Thus we have
-        $$d(\Gamma) = [\mathrm{SL}_2(\mathbb{Z}) : \{ \pm I_2 \} \Gamma] = \left( \begin{cases}
-                      1 & (-I_2    \in \Gamma) \\
-            \frac{1}{2} & (-I_2 \notin \Gamma)
-        \end{cases} \right) [\mathrm{SL}_2(\mathbb{Z}) : \Gamma].$$
+            $d(\Gamma) \in \mathbb{N}$ is the degree $\deg(f)$ of the natural projection map
+            $$f: X(\Gamma) \to X(1), \quad f: \Gamma z \mapsto \mathrm{SL}_2(\mathbb{Z}) z$$ <!--('X(\mathrm{SL}_2(\mathbb{Z}))'를 'X(1)'으로 수정한 시각: 2026/8/8 15:37:12)-->
+            of modular curves (as a holomorphic map between compact Riemann surfaces) . Thus we have
+            $$d(\Gamma) = [\mathrm{SL}_2(\mathbb{Z}) : \{ \pm I_2 \} \Gamma] = \left( \begin{cases}
+                        1 & (-I_2    \in \Gamma) \\
+                \frac{1}{2} & (-I_2 \notin \Gamma)
+            \end{cases} \right) [\mathrm{SL}_2(\mathbb{Z}) : \Gamma].$$
         </li>
         <!--(2026/8/8 15:15:25)-->
 
@@ -239,10 +241,15 @@
 
         <li>$\epsilon_\infty(\Gamma) \in \mathbb{N}$ is the number of cusps of $X(\Gamma)$.</li>
 
-        <li>$g(\Gamma) \in \mathbb{N}_0$ is the genus of $X(\Gamma)$.</li>
+        <li>
+            $g(\Gamma) \in \mathbb{N}_0$ is the genus of $X(\Gamma)$. We have
+            $$g(\Gamma) = \frac{1}{12} d(\Gamma) - \frac{1}{4} \epsilon_2(\Gamma) - \frac{1}{3} \epsilon_3(\Gamma) - \frac{1}{2} \epsilon_\infty(\Gamma) + 1$$
+            (Theorem 3.1.1 of [Diamond-Shurman]) .
+            <!--(2026/8/8 15:45:30)-->
+        </li>
     </ul>
 
-    <br><br>
+    <br>
 
     <table>
         <tr>
@@ -289,6 +296,17 @@
 
         <!--(나중에 $\epsilon_infty^\mathrm{reg}(\Gamma)$, $\epsilon_infty^\mathrm{irr}(\Gamma)$, ... 도 추가해야 할 수도..? ... (2026/8/8 15:25:06) 흠... ㅎㅎ)-->
     </table>
+
+    <br><br>
+
+
+
+    <h2>References</h2>
+
+    <ul>
+        <li>[Diamond-Shurman] Fred Diamond and Jerry Shurman. <i>A First Course in Modular Forms</i>. Graduate Texts in Mathematics <b>228</b>. Springer-Verlag, 2005.</li>
+        <!--(Diamond-Shurman 책 맨 뒤 (448쪽) 의 reference 중 [FH91] (Fulton-Harris) 의 형식을 참고해서 적음 (2026/8/8 16:27:55))-->
+    </ul>
 
 
 
