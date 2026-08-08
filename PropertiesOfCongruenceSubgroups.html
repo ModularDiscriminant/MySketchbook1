@@ -35,11 +35,23 @@
     <h3>Properties of congruence subgroups $\Gamma_0(N)$, $\Gamma_1(N)$, and $\Gamma(N)$</h3>
     <!--(2026/8/7 16:18:46)-->
 
-    <br><br>
+    <br>
 
-    We denote the set of positive integers by $\mathbb{N}$.
+    <h2>Notations</h2>
 
-    <br><br>
+    <ul>
+        <li>$\mathbb{N}$   is the set of    positive integers.</li>
+        <li>$\mathbb{N}_0$ is the set of nonnegative integers.</li>
+        <li>
+            $I_2 = \begin{pmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z})$ is the identity matrix.
+        </li>
+        <!--(2026/8/8 15:18:04)-->
+    </ul>
+
+    <br>
 
     <h2>Definition</h2>
 
@@ -128,12 +140,6 @@
     Here, $N \in \mathbb{N}$ is a positive integer. <br><br>
     <!--(2026/8/8 6:44:44)-->
 
-    <span class="annotation">$I_2 = \begin{pmatrix}
-        1 & 0 \\
-        0 & 1
-    \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z})$ is the identity matrix.</span> <br><br>
-    <!--(2026/8/8 8:46:44)-->
-
     <table>
         <tr>
             <th>congruence subgroup $\Gamma$</th>
@@ -202,6 +208,86 @@
             \end{cases}$</td>
             <!--(2026/8/8 8:52:09)-->
         </tr>
+    </table>
+    
+    <br><br>
+
+
+
+    <h2>Degree, number of elliptic points, number of cusps, and genus</h2>
+    <!--(2026/8/8 15:00:02) (2026/8/8 15:26:03에 맨 앞에 'Degree'를 추가함)-->
+
+    <ul>
+        <li>$N \in \mathbb{N}$ is a positive integer.</li>
+
+        <li>$\Gamma \leq \mathrm{SL}_2(\mathbb{Z})$ is a congruence subgroup.</li>
+
+        <li>
+        $d(\Gamma) \in \mathbb{N}$ is the degree $\deg(f)$ of the natural projection map
+        $$f: X(\Gamma) \to X(\mathrm{SL}_2(\mathbb{Z})), \quad f: \Gamma z \mapsto \mathrm{SL}_2(\mathbb{Z}) z$$
+        of modular curves (as a holomorphic map between compact Riemann surfaces) . Thus we have
+        $$d(\Gamma) = [\mathrm{SL}_2(\mathbb{Z}) : \{ \pm I_2 \} \Gamma] = \left( \begin{cases}
+                      1 & (-I_2    \in \Gamma) \\
+            \frac{1}{2} & (-I_2 \notin \Gamma)
+        \end{cases} \right) [\mathrm{SL}_2(\mathbb{Z}) : \Gamma].$$
+        </li>
+        <!--(2026/8/8 15:15:25)-->
+
+        <li>$\epsilon_2(\Gamma) \in \mathbb{N}_0$ is the number of elliptic points of period 2 in $X(\Gamma)$.</li>
+
+        <li>$\epsilon_3(\Gamma) \in \mathbb{N}_0$ is the number of elliptic points of period 3 in $X(\Gamma)$.</li>
+
+        <li>$\epsilon_\infty(\Gamma) \in \mathbb{N}$ is the number of cusps of $X(\Gamma)$.</li>
+
+        <li>$g(\Gamma) \in \mathbb{N}_0$ is the genus of $X(\Gamma)$.</li>
+    </ul>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>congruence subgroup $\Gamma$</th>
+            <th>$\Gamma_0(N)$</th>
+            <th>$\Gamma_1(N)$</th>
+            <th>$\Gamma(N)$</th>
+        </tr>
+
+        <tr>
+            <th>$d(\Gamma)$</th>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+
+        <tr>
+            <th>$\epsilon_2(\Gamma)$</th>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+
+        <tr>
+            <th>$\epsilon_3(\Gamma)$</th>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+
+        <tr>
+            <th>$\epsilon_\infty(\Gamma)$</th>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+
+        <tr>
+            <th>$g(\Gamma)$</th>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+
+        <!--(나중에 $\epsilon_infty^\mathrm{reg}(\Gamma)$, $\epsilon_infty^\mathrm{irr}(\Gamma)$, ... 도 추가해야 할 수도..? ... (2026/8/8 15:25:06) 흠... ㅎㅎ)-->
     </table>
 
 
